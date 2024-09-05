@@ -12,12 +12,13 @@ source:
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   skip: True  # [not linux]
-  number: 1
+  number: 2
 
 requirements:
   host:
     - python
     - pip
+    - setuptools
   run:
     - python
     - python-xlib >=0.21
